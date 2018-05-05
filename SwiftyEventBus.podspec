@@ -18,9 +18,11 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'SwiftyEventBus/Core/**/*.swift'
+ss.dependency 'RxSwift'
   end
 
   s.subspec 'Rx' do |ss|
     ss.source_files = 'SwiftyEventBus/Rx/**/*.swift'
+    ss.dependency 'RxSwift'
   end
 end

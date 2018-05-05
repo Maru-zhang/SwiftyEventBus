@@ -7,22 +7,37 @@
 //
 
 import UIKit
+import RxCocoa
 import SwiftyEventBus
+import RxSwift
+
+struct Person: EventPresentable {
+    let name: String
+}
 
 class DemoViewController: UIViewController {
 
     var ob: EventSubscription<String>!
 
+    let bag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ob = EventBus.`default`.register { (x: String) in
-            print(x)
-        }
+//        ob = EventBus.`default`.register { (x: String) in
+//            print(x)
+//        }
+
+        EventBus.default.rx.register(Person.self)
+            .subscribe(onNext: { (x) in
+                print(x)
+            })
+            .disposed(by: bag)
     }
 
 
     @IBAction func postAction(_ sender: Any) {
-        EventBus.`default`.post(12121)
+        let p = Person(name: "xiaom")
+        EventBus.`default`.post(p)
     }
 }

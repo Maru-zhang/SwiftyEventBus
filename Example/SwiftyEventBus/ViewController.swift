@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyEventBus
+import RxCocoa
+import RxSwift
 
 class ViewController: UIViewController {
 

@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import RxSwift
+
+extension EventBus: ReactiveCompatible {}
+
+public extension Reactive where Base: EventBus {
+
+    /// Reactive wrapper for `register(on:)`
+    public func register<T: EventPresentable>(_ type: T.Type) -> Observable<T> {
+        return Observable<T>.create({ (observer) -> Disposable in
+            return self.base.register(on: { (cargo) in
+                observer.onNext(cargo)
+            })
+        })
+    }
+}
