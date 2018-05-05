@@ -1,0 +1,33 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SwiftyEventBus (0.1.0):
+    - SwiftyEventBus/Core (= 0.1.0)
+    - SwiftyEventBus/Rx (= 0.1.0)
+  - SwiftyEventBus/Core (0.1.0)
+  - SwiftyEventBus/Rx (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - RxCocoa
+  - RxSwift
+  - SwiftyEventBus (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyEventBus:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftyEventBus: 4d337610cf8be379d7f5d839c75d6cc69af0fa8b
+
+PODFILE CHECKSUM: c656468af1a6b26e9dc4ac0310a789db8d51a44c
+
+COCOAPODS: 1.4.0

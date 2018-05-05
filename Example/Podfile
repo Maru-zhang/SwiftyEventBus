@@ -2,7 +2,8 @@ use_frameworks!
 
 target 'SwiftyEventBus_Example' do
   pod 'SwiftyEventBus', :path => '../'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
   target 'SwiftyEventBus_Tests' do
     inherit! :search_paths
 
