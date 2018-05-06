@@ -14,12 +14,21 @@ private let defaultDomain = "com.eventbus.swifty.domain.default"
 
 public class EventBus {
 
+    /// The default common `EventBus` instance
     public static let `default` = EventBus(domain: defaultDomain)
 
+    /// The domain string that identify different `EventBus` instance
     public let domain: String
 
+    /// The Dictionary that contain all `EventSubscriber`
+    /// Discuss: we use string of type as key, and a set of `EventSubscriber`
+    /// as value. when register or unregister, we just need to modify corresponding
+    /// set.
     var observers: [String: Any]
 
+    /// The construction of `EventBus`
+    ///
+    /// - Parameter domain: The domain string
     public init(domain: String) {
         self.domain = domain
         self.observers = [String: Any]()
@@ -28,6 +37,9 @@ public class EventBus {
 
 extension EventBus: EventBusPostable {
 
+    /// Post a value to all subsctiber
+    ///
+    /// - Parameter cargo: The playload of any type
     public func post<T: EventPresentable>(_ cargo: T) {
         let identifier = T.processIdentifier
         if let queue = observers[identifier] as? Set<EventSubscriber<T>> {

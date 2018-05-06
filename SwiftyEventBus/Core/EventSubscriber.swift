@@ -10,7 +10,7 @@ import Foundation
 public class EventSubscriber<T>: NSObject {
 
     let eventHandler: (T) -> Void
-
+    
     init(eventHandler: @escaping (T) -> Void) {
         self.eventHandler = eventHandler
     }

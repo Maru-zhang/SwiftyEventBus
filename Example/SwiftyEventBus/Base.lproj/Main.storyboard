@@ -20,54 +20,13 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8g-i8-BUt">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="B00-HG-jca" kind="show" id="POq-Kb-sRp"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="K8g-i8-BUt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="LPD-mV-gEK"/>
-                            <constraint firstItem="K8g-i8-BUt" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="PAM-Ob-ywv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mea-iK-ewu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1148" y="100"/>
-        </scene>
-        <!--Demo View Controller-->
-        <scene sceneID="w3k-Ha-Awo">
-            <objects>
-                <viewController id="B00-HG-jca" customClass="DemoViewController" customModule="SwiftyEventBus_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Eki-9L-NuE"/>
-                        <viewControllerLayoutGuide type="bottom" id="vFX-NG-1BL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cUk-gC-oRw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdV-5g-Jsx">
-                                <rect key="frame" x="167" y="318" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="POST"/>
-                                <connections>
-                                    <action selector="postAction:" destination="B00-HG-jca" eventType="touchUpInside" id="azQ-sV-fYo"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dV2-bY-KpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1909.5999999999999" y="98.50074962518741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8gj-Li-Ug2">
