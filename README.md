@@ -22,6 +22,8 @@ If you have custom type, then you should make it confirm `EventPresentable` Prot
 
 #### Register
 
+You can register in anywhere, it will always observe until the `EventSubscription` object been released.
+
 ```
 class DemoViewController: UIViewController {
 
@@ -36,17 +38,14 @@ class DemoViewController: UIViewController {
 }
 ```
 
-You can register in anywhere, it will always observe until the `EventSubscription` object been released.
-
 #### Post
+
+Finally, you just need to post any type that implement `EventPresentable`.
 
 
 ```
 EventBus.default.post("Foo")
 ```
-
-Finally, you just need to post any type that implement `EventPresentable`.
-
 
 ## Example
 
