@@ -37,14 +37,12 @@ public class EventBus {
 
 extension EventBus: EventBusPostable {
 
-    /// Post a value to all subsctiber
-    ///
-    /// - Parameter cargo: The playload of any type
     public func post<T: EventPresentable>(_ cargo: T) {
         let identifier = T.processIdentifier
         if let queue = observers[identifier] as? Set<EventSubscriber<T>> {
             for action in queue {
-                action.eventHandler(cargo)
+                let excuter = action.mode.excuter
+                excuter.run(with: cargo, eventHandler: action.eventHandler)
             }
         }
     }
@@ -52,9 +50,9 @@ extension EventBus: EventBusPostable {
 
 extension EventBus: EventBusObservable {
 
-    public func register<T>(on messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T : EventPresentable {
+    public func register<T>(on mode: DispatchMode = .sync, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T : EventPresentable {
         let identifier = T.processIdentifier
-        let subscriber = EventSubscriber(eventHandler: messageEvent)
+        let subscriber = EventSubscriber(mode: mode, eventHandler: messageEvent)
         let subscription = EventSubscription(entity: subscriber, eventBus: self)
         if var queue4T = observers[identifier] as? Set<EventSubscriber<T>> {
             queue4T.insert(subscriber)

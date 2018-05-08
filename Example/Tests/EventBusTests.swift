@@ -23,7 +23,7 @@ class EventBusTests: QuickSpec {
             describe("post string value", {
                 it("get string message event", closure: {
                     waitUntil(action: { (done) in
-                        self.stringBag = EventBus.default.register(on: { (x: String) in
+                        self.stringBag = EventBus.default.register(messageEvent: { (x: String) in
                             expect(x).to(equal("foo"))
                             done()
                         })
@@ -33,7 +33,7 @@ class EventBusTests: QuickSpec {
                 it("get two string message event", closure: {
                     var count = 0
                     waitUntil(action: { (done) in
-                        self.stringBag = EventBus.default.register(on: { (x: String) in
+                        self.stringBag = EventBus.default.register(messageEvent: { (x: String) in
                             count += 1
                             if (count == 2) {
                                 done()
@@ -49,7 +49,7 @@ class EventBusTests: QuickSpec {
                             let semaphore = DispatchSemaphore(value: 1)
                             concurrentQueue.async {
                                 semaphore.wait()
-                                self.stringBag = EventBus.default.register(on: { (x: String) in
+                                self.stringBag = EventBus.default.register(messageEvent: { (x: String) in
                                     expect(x).to(equal("foo"))
                                     semaphore.signal()
                                 })
@@ -57,7 +57,7 @@ class EventBusTests: QuickSpec {
                             }
                             concurrentQueue.async {
                                 semaphore.wait()
-                                self.stringBGBag = EventBus.default.register(on: { (x: String) in
+                                self.stringBGBag = EventBus.default.register(messageEvent: { (x: String) in
                                     expect(x).to(equal("foo"))
                                     semaphore.signal()
                                 })
@@ -71,7 +71,7 @@ class EventBusTests: QuickSpec {
             describe("post int value", {
                 it("get int message event", closure: {
                     waitUntil(action: { (done) in
-                        self.intBag = EventBus.default.register(on: { (x: Int) in
+                        self.intBag = EventBus.default.register(messageEvent: { (x: Int) in
                             expect(x).to(equal(20))
                             done()
                         })
