@@ -10,8 +10,11 @@ import Foundation
 public class EventSubscriber<T>: NSObject {
 
     let eventHandler: (T) -> Void
+
+    let mode: DispatchMode
     
-    init(eventHandler: @escaping (T) -> Void) {
+    init(mode: DispatchMode, eventHandler: @escaping (T) -> Void) {
+        self.mode = mode
         self.eventHandler = eventHandler
     }
 }
