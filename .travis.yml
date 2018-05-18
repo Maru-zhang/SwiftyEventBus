@@ -1,15 +1,31 @@
-# references:
-# * https://www.objc.io/issues/6-build-tools/travis-ci/
-# * https://github.com/supermarin/xcpretty#usage
-
 osx_image: xcode9.2
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
+xcode_workspace: SwiftyEventBus.xcworkspace
+xcode_scheme: SwiftyEventBus
+env:
+  global:
+  - FRAMEWORK_NAME=SwiftyEventBus
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+- brew update
+- brew outdated carthage || brew upgrade carthage
+- gem install cocoapods
 - pod update RxSwift --project-directory=Example
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftyEventBus.xcworkspace -scheme SwiftyEventBus-Example -sdk iphonesimulator11.2 -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftyEventBus.xcworkspace
+  -scheme SwiftyEventBus-Example -sdk iphonesimulator11.2 -destination 'platform=iOS
+  Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: DjIQDHMOxg1ztrIG84hUTYPUjcTJr1l1PUf606oalFcWM2q2MS74nYfPEWkXd3dgUfiiyfnXDQBi9vh6jIdBd4fnvBMZ7/oqqr/fjkXvVzTNk8aay7I9g6kuI/oKShmkG++st+e9+2SOcLPrEJLN8JT8bi9X6IqtNCOMNYC51rJp4+ji5ej+fn8+SmVuO/CvBwtkRJXV96doVY4rJgBv4q6SdZMjS29N603cstr9YEi4tCKqZn6veBvWvohE1SjCfL2GPHFhKYps6/t65l9lIR3kIauLVTLxHD/hQq4SfKNVMhf+aR1LrQSae/R5K5Eo4p3KLXT3MLYsSEnG2ZE22dI8TEh8o+TtAwDP6kSK55QVmouZVTFUs4HbuAeuYrly5jAFrNlzc8LSF1Ej+SLGD0+/stQ7w60gkQAoiB8h0rFm+Pa2F5fFM1nUOkAme8xhoeR3aILg5E+gUCBXmUN3CwvKcPRMTZ341lNOqC3vb+vmRepP+1WZpfORNTbiDEhZYpaW0GPyuy1feEWmt/zVqG/X9kKCTaw4bQ9mmxQFdvPo4QwwxDTp62ReNTehboO3ybXbpPnwT/UTX8PwrJi41ojR1wETPEdsPQnuu0wQO/mYgAGcB0olq+ySool6qcSx7s3iTINEIRpR0XtugEC7uLjWPjl08L06b9SD+JY5Ibs=
+  file: SwiftyEventBus.framework.zip
+  on:
+    repo: Maru-zhang/SwiftyEventBus
+    branch: develop

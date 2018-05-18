@@ -10,10 +10,10 @@ import Dispatch
 
 /// The subscribe model when code excuting
 ///
-/// - sync: dispatch block in same queue when post and subscribe
+/// - same: dispatch block in same queue when post and subscribe
 /// - main: dispatch block in main queue only when subscribe
 public enum DispatchMode {
-    case sync
+    case same
     case main
 }
 
@@ -22,7 +22,7 @@ extension DispatchMode {
     /// The dispatch excutor for specify model
     var excuter: EventDispatchable {
         switch self {
-        case .sync:
+        case .same:
             return SyncEventDispatch()
         case .main:
             return MainEventDispatch()
@@ -38,7 +38,7 @@ protocol EventDispatchable {
 struct SyncEventDispatch: EventDispatchable {
 
     var mode: DispatchMode {
-        return .sync
+        return .same
     }
 
     func run<T>(with event: T, eventHandler: @escaping (T) -> Void) {
