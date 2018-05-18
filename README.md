@@ -1,6 +1,9 @@
 # SwiftyEventBus
 
+![](https://img.shields.io/badge/language-swift-orange.svg)
 [![CI Status](https://img.shields.io/travis/Maru-zhang/SwiftyEventBus.svg?style=flat)](https://travis-ci.org/Maru-zhang/SwiftyEventBus)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![codecov](https://codecov.io/gh/Maru-zhang/SwiftyEventBus/branch/master/graph/badge.svg)](https://codecov.io/gh/Maru-zhang/SwiftyEventBus)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyEventBus.svg?style=flat)](https://cocoapods.org/pods/SwiftyEventBus)
 [![License](https://img.shields.io/cocoapods/l/SwiftyEventBus.svg?style=flat)](https://cocoapods.org/pods/SwiftyEventBus)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyEventBus.svg?style=flat)](https://cocoapods.org/pods/SwiftyEventBus)

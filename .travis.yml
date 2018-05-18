@@ -7,6 +7,7 @@ xcode_scheme: SwiftyEventBus
 env:
   global:
   - FRAMEWORK_NAME=SwiftyEventBus
+  - CODECOV_TOKEN=05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
@@ -18,6 +19,8 @@ script:
   -scheme SwiftyEventBus-Example -sdk iphonesimulator11.2 -destination 'platform=iOS
   Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
