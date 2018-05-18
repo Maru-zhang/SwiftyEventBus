@@ -50,7 +50,7 @@ extension EventBus: EventBusPostable {
 
 extension EventBus: EventBusObservable {
 
-    public func register<T>(on mode: DispatchMode = .sync, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T : EventPresentable {
+    public func register<T>(on mode: DispatchMode = .same, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T : EventPresentable {
         let identifier = T.processIdentifier
         let subscriber = EventSubscriber(mode: mode, eventHandler: messageEvent)
         let subscription = EventSubscription(entity: subscriber, eventBus: self)
