@@ -18,29 +18,35 @@ class EventBusDispatchTests: QuickSpec {
             var bag: EventSubscription<String>!
             context("post on global queue", {
                 context("dispatch on same queue", {
-                    waitUntil(action: { (done) in
-                        let token = DispatchSpecificKey<String>()
-                        DispatchQueue.global().setSpecific(key: token, value: "global")
-                        DispatchQueue.global().sync {
-                            bag = EventBus.default.register(on: .same, messageEvent: { (x: String) in
-                                expect(DispatchQueue.getSpecific(key: token)).to(equal("global"))
-                                expect(x).to(equal("foo"))
-                                done()
-                            })
-                            EventBus.default.post("foo")
-                        }
+                    it("got foo string result", closure: {
+                        waitUntil(action: { (done) in
+                            let token = DispatchSpecificKey<String>()
+                            DispatchQueue.global().setSpecific(key: token, value: "global")
+                            DispatchQueue.global().sync {
+                                bag = EventBus.default.register(on: .same, messageEvent: { (x: String) in
+                                    expect(DispatchQueue.getSpecific(key: token)).to(equal("global"))
+                                    expect(x).to(equal("foo"))
+                                    done()
+                                })
+                                EventBus.default.post("foo")
+                            }
+                        })
+                        bag.dispose()
                     })
                 })
                 context("dispatch on main queue", {
-                    waitUntil(action: { (done) in
-                        DispatchQueue.global().async(execute: {
-                            bag = EventBus.default.register(on: .main, messageEvent: { (x: String) in
-                                expect(DispatchQueue.isMain).to(equal(true))
-                                expect(x).to(equal("foo"))
-                                done()
+                    it("got foo string result", closure: {
+                        waitUntil(action: { (done) in
+                            DispatchQueue.global().async(execute: {
+                                bag = EventBus.default.register(on: .main, messageEvent: { (x: String) in
+                                    expect(DispatchQueue.isMain).to(equal(true))
+                                    expect(x).to(equal("foo"))
+                                    done()
+                                })
+                                EventBus.default.post("foo")
                             })
-                            EventBus.default.post("foo")
                         })
+                        bag.dispose()
                     })
                 })
             })

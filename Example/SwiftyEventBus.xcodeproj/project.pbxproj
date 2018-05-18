@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		42C5883A209DB6D3002889F8 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C58838209DB6C1002889F8 /* EventBusTests.swift */; };
 		42C9C4D220AE71B600E197F7 /* EventBusDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C4D120AE71B600E197F7 /* EventBusDispatchTests.swift */; };
+		42C9C4ED20AEB70000E197F7 /* EventBusRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C4EB20AEB41800E197F7 /* EventBusRxTests.swift */; };
 		4A67E96FD58DE800847C9DCB /* Pods_SwiftyEventBus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140153DD55DB068B35492E98 /* Pods_SwiftyEventBus_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		40A4CFCF5B605D68C028838E /* Pods_SwiftyEventBus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyEventBus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C58838209DB6C1002889F8 /* EventBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusTests.swift; sourceTree = "<group>"; };
 		42C9C4D120AE71B600E197F7 /* EventBusDispatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusDispatchTests.swift; sourceTree = "<group>"; };
+		42C9C4EB20AEB41800E197F7 /* EventBusRxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusRxTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftyEventBus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyEventBus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				42C58838209DB6C1002889F8 /* EventBusTests.swift */,
 				42C9C4D120AE71B600E197F7 /* EventBusDispatchTests.swift */,
+				42C9C4EB20AEB41800E197F7 /* EventBusRxTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -359,6 +362,7 @@
 			files = (
 				42C5883A209DB6D3002889F8 /* EventBusTests.swift in Sources */,
 				42C9C4D220AE71B600E197F7 /* EventBusDispatchTests.swift in Sources */,
+				42C9C4ED20AEB70000E197F7 /* EventBusRxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

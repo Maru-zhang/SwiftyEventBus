@@ -27,7 +27,7 @@ If you have custom type, then you should make it confirm `EventPresentable` Prot
 
 You can register in anywhere, it will always observe until the `EventSubscription` object been released.
 
-```
+```swift
 class DemoViewController: UIViewController {
 
     var ob: EventSubscription<String>!
@@ -46,8 +46,28 @@ class DemoViewController: UIViewController {
 Finally, you just need to post any type that implement `EventPresentable`.
 
 
-```
+```swift
 EventBus.default.post("Foo")
+```
+
+### Rx Extension
+
+if you project using `RxSwift`, maybe you need this to bridge `SwiftyEventBus` to `Rx`.
+
+```ruby
+pod 'SwiftyEventBus/Rx'
+```
+
+after that, you can use `SwiftyEventBus` in `RxSwift` world.🎉
+
+```swift
+var bag: DisposeBag? = DisposeBag()
+EventBus.default.rx.register(String.self)
+    .subscribe(onNext: { (x) in
+        print(x) /// "foo"
+    })
+    .disposed(by: bag!)
+EventBus.default.post("foo")
 ```
 
 ## Example
