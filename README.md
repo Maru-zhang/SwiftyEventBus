@@ -1,5 +1,6 @@
-![SwiftyEventBus](https://github.com/Maru-zhang/SwiftyEventBus/blob/master/SwiftyEventBus_Logo.png)
-
+<div align=center>
+<img src="https://github.com/Maru-zhang/SwiftyEventBus/blob/master/SwiftyEventBus_Logo.png"/>
+</div>
 # SwiftyEventBus
 
 ![](https://img.shields.io/badge/language-swift-orange.svg)
