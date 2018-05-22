@@ -16,8 +16,8 @@ before_install:
 - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftyEventBus.xcworkspace
-  -scheme SwiftyEventBus-Example -sdk iphonesimulator11.2 -destination 'platform=iOS
-  Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+  -scheme SwiftyEventBusTests -sdk iphonesimulator11.2 -destination 'platform=iOS
+  Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO
 - pod lib lint
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
