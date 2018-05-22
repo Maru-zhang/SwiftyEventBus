@@ -1,3 +1,5 @@
+![SwiftyEventBus](https://github.com/Maru-zhang/SwiftyEventBus/blob/master/SwiftyEventBus_Logo.png)
+
 # SwiftyEventBus
 
 ![](https://img.shields.io/badge/language-swift-orange.svg)
