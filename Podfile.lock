@@ -1,0 +1,24 @@
+PODS:
+  - Nimble (7.1.1)
+  - Quick (1.3.0)
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Nimble
+    - Quick
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: f4c805539ddee9d77eabf2487aa7b4000a64ae10
+
+COCOAPODS: 1.5.0
