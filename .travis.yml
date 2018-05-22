@@ -1,24 +1,21 @@
 osx_image: xcode9.2
 language: objective-c
 cache: cocoapods
-podfile: Example/Podfile
+podfile: Podfile
 xcode_workspace: SwiftyEventBus.xcworkspace
 xcode_scheme: SwiftyEventBus
 env:
   global:
   - FRAMEWORK_NAME=SwiftyEventBus
-  - CODECOV_TOKEN=05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
 - gem install cocoapods
-- pod update RxSwift --project-directory=Example
-- pod install --project-directory=Example
+- pod update RxSwift
+- pod install
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftyEventBus.xcworkspace
-  -scheme SwiftyEventBus-Example -sdk iphonesimulator11.2 -destination 'platform=iOS
-  Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace SwiftyEventBus.xcworkspace -scheme SwiftyEventBus -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO
+- pod lib lint --allow-warnings
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_deploy:

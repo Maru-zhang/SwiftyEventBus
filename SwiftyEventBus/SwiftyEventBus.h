@@ -2,8 +2,8 @@
 //  SwiftyEventBus.h
 //  SwiftyEventBus
 //
-//  Created by Maru on 2018/5/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Maru on 2018/5/22.
+//  Copyright © 2018 souche. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

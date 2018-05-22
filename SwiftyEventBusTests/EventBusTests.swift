@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-import SwiftyEventBus
+@testable import SwiftyEventBus
 
 let concurrentQueue = DispatchQueue(label: "com.eventbus.test.concurrent", attributes: .concurrent)
 
