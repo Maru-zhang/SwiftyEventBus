@@ -1,7 +1,7 @@
 osx_image: xcode9.2
 language: objective-c
 cache: cocoapods
-podfile: Example/Podfile
+podfile: Podfile
 xcode_workspace: SwiftyEventBus.xcworkspace
 xcode_scheme: SwiftyEventBus
 env:
@@ -11,11 +11,11 @@ before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
 - gem install cocoapods
-- pod update RxSwift --project-directory=Example --verbose
-- pod install --project-directory=Example --verbose
+- pod update RxSwift
+- pod install
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftyEventBus.xcworkspace
-  -scheme SwiftyEventBusTests -sdk iphonesimulator11.2 -destination 'platform=iOS
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace SwiftyEventBus.xcworkspace
+  -scheme SwiftyEventBus -sdk iphonesimulator11.2 -destination 'platform=iOS
   Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO
 - pod lib lint
 after_success:
