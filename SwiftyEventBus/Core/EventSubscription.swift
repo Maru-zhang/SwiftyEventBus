@@ -9,7 +9,9 @@ import Foundation
 
 public class EventSubscription<T: EventPresentable>{
 
+    /// The subscriber who is working
     let entity: EventSubscriber<T>
+    /// The EventBus that subscription holding
     let eventBus: EventBus
 
     init(entity: EventSubscriber<T>, eventBus: EventBus) {
