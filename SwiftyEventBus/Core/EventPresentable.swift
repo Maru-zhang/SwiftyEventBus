@@ -14,7 +14,7 @@ public protocol EventPresentable {
 extension EventPresentable {
 
     public static var processIdentifier: String {
-        return String(describing: self)
+        return String(reflecting: self)
     }
 }
 

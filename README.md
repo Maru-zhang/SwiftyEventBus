@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/Maru-zhang/SwiftyEventBus/blob/master/SwiftyEventBus_Logo.png"/>
+<img src="https://github.com/Maru-zhang/SwiftyEventBus/blob/master/Screenshots/SwiftyEventBus-Logo.png"/>
     
 <div align=left>
 
