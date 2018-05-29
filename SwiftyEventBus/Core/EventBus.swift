@@ -62,17 +62,29 @@ extension EventBus: EventBusPostable {
     public func post<T: EventPresentable>(_ cargo: T) {
         let identifier = T.processIdentifier
         if let queue = observers[identifier] as? Set<EventSubscriber<T>> {
-            /// the priority more largger, the time receive message more earlier.
-            let sortedQueue = queue.sorted { (left, right) -> Bool in
-                switch (left.priority, right.priority) {
-                case (.value(let leftValue), .value(let rightValue)):
-                    return leftValue < rightValue
-                }
+            performPost(with: queue, cargo: cargo)
+        }
+    }
+
+    public func safePost<T>(_ cargo: T) throws where T : EventPresentable {
+        let identifier = T.processIdentifier
+        guard let queue = observers[identifier] as? Set<EventSubscriber<T>>, !queue.isEmpty else {
+            throw EventBusPostError.useless
+        }
+        performPost(with: queue, cargo: cargo)
+    }
+
+    func performPost<T: EventPresentable>(with queue: Set<EventSubscriber<T>>, cargo: T) {
+        /// the priority more largger, the time receive message more earlier.
+        let sortedQueue = queue.sorted { (left, right) -> Bool in
+            switch (left.priority, right.priority) {
+            case (.value(let leftValue), .value(let rightValue)):
+                return leftValue < rightValue
             }
-            for action in sortedQueue {
-                let excuter = action.mode.excuter
-                excuter.run(with: cargo, eventHandler: action.eventHandler)
-            }
+        }
+        for action in sortedQueue {
+            let excuter = action.mode.excuter
+            excuter.run(with: cargo, eventHandler: action.eventHandler)
         }
     }
 }
