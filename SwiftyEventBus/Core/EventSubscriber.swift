@@ -12,9 +12,11 @@ public class EventSubscriber<T>: NSObject {
     let eventHandler: (T) -> Void
 
     let mode: DispatchMode
+    let priority: EventBusPriority
     
-    init(mode: DispatchMode, eventHandler: @escaping (T) -> Void) {
+    init(mode: DispatchMode, priority: EventBusPriority = .default, eventHandler: @escaping (T) -> Void) {
         self.mode = mode
+        self.priority = priority
         self.eventHandler = eventHandler
     }
 }

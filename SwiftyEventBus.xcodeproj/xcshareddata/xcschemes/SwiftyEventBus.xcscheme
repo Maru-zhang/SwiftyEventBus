@@ -20,6 +20,20 @@
                ReferencedContainer = "container:SwiftyEventBus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42C9C54A20B416AE00E197F7"
+               BuildableName = "SwiftyEventBusTests.xctest"
+               BlueprintName = "SwiftyEventBusTests"
+               ReferencedContainer = "container:SwiftyEventBus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

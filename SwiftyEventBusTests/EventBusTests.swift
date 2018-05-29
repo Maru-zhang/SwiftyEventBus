@@ -76,7 +76,13 @@ class EventBusTests: QuickSpec {
                             done()
                         })
                         EventBus.default.post(20)
+                        self.intBag = nil
                     })
+                })
+            })
+            describe("safe post int value", {
+                it("throw a error for post", closure: {
+                    expect { try EventBus.default.safePost(100) }.to(throwError(EventBusPostError.useless))
                 })
             })
         }
