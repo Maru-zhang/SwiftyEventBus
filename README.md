@@ -55,6 +55,27 @@ Finally, you just need to post any type that implement `EventPresentable`.
 EventBus.default.post("Foo")
 ```
 
+### Advance
+
+#### Safe Post
+
+Sometime, you maybe post a message that no one obseving, this is unsafety behaviour, then you can use this:
+
+```swift
+EventBus.default.safePost("Foo")
+```
+
+If there is no observer subscribe this kind of message, `EventBus.default.safePost("Foo")` will raise `EventBusPostError.useless` Exception, you can catch it and handle this.
+
+```swift
+/// handle EventBusPostError excetion
+do {
+    try EventBus.default.safePost("foo")
+} catch {
+    // do something
+}
+```
+
 ### Rx-Extension
 
 if you project using `RxSwift`, maybe you need this to bridge `SwiftyEventBus` to `Rx`.
