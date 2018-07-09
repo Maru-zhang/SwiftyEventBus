@@ -22,13 +22,13 @@ SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.
 
 `SwiftyEventBus` is very easy to use, you just need 3 steps:
 
-#### 1️⃣ **Define**
+#### 1.**Define**
 
 The stuff that you want to delivery need implement `EventPresentable` Protocol, most of foundation type already implemented, such as `Int`, `Float`, `String`, etc...
 
 If you have custom type, then you should make it confirm `EventPresentable` Protocol.
 
-#### 2️⃣ **Register**
+#### 2.**Register**
 
 You can register in anywhere, it will always observe until the `EventSubscription` object been released.
 
@@ -46,7 +46,7 @@ class DemoViewController: UIViewController {
 }
 ```
 
-#### 3️⃣ **Post**
+#### 3.**Post**
 
 Finally, you just need to post any type that implement `EventPresentable`.
 
