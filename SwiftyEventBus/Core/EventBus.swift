@@ -66,14 +66,14 @@ public class EventBus {
 
 extension EventBus: EventBusPostable {
 
-    public func post<T: EventPresentable>(_ cargo: T) {
+    public func post<T>(_ cargo: T) {
         middleWare.post(cargo)
     }
 }
 
 extension EventBus: EventBusObservable {
 
-    public func register<T>(on mode: DispatchMode = .same, priority: EventBusPriority = .`default`, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T: EventPresentable {
+    public func register<T>(on mode: DispatchMode = .same, priority: EventBusPriority = .`default`, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> {
         return middleWare.register(on: mode, priority: priority, messageEvent: messageEvent)
     }
 }
