@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EventBusObservable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/EventBusObservable" class="dashAnchor"></a>
+    <a title="EventBusObservable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftyEventBus Docs</a> (38% documented)</p>
+        <p class="header-right"><a href="https://github.com/Maru-zhang/SwiftyEventBus"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftyEventBus Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EventBusObservable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EventBus.html">EventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:14SwiftyEventBus0B10SubscriberC">EventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventSubscription.html">EventSubscription</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DispatchMode.html">DispatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventBusPostError.html">EventBusPostError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventBusPriority.html">EventBusPriority</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EventBusObservable.html">EventBusObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventBusPostable.html">EventBusPostable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventPresentable.html">EventPresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:14SwiftyEventBus0B6Bindera">EventBinder</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EventBusObservable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EventBusObservable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftyEventBus0bC10ObservableP8registerAA0B12SubscriptionCyqd__GAA12DispatchModeO2on_AA0bC8PriorityO8priorityyqd__c07messageB0tAA0B11PresentableRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(on:priority:messageEvent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftyEventBus0bC10ObservableP8registerAA0B12SubscriptionCyqd__GAA12DispatchModeO2on_AA0bC8PriorityO8priorityyqd__c07messageB0tAA0B11PresentableRd__lF">register(on:priority:messageEvent:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a message event for specify DataStruct</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">on</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DispatchMode.html">DispatchMode</a></span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/EventBusPriority.html">EventBusPriority</a></span><span class="p">,</span> <span class="nv">messageEvent</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EventSubscription.html">EventSubscription</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EventPresentable.html">EventPresentable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dispatch model for subscribe</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>priority</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a closure that use <code>T</code> as only param</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageEvent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a closure that use <code>T</code> as only param</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A instance of <code><a href="../Classes/EventSubscription.html">EventSubscription</a></code>, that hold the subscriber</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/Maru-zhang" target="_blank" rel="external">Maru</a>. All rights reserved. (Last updated: 2018-07-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
