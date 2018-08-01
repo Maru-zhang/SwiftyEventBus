@@ -17,6 +17,8 @@ SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.
 
 * simplifies the communication between components
 * make your code simple and elegant
+* type safe
+* more advance feature: safety event, sticky event, etc...
 
 ## Usage
 
