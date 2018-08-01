@@ -16,7 +16,7 @@ public protocol EventBusObservable {
     ///   - priority: a closure that use `T` as only param
     ///   - messageEvent: a closure that use `T` as only param
     /// - Returns: A instance of `EventSubscription`, that hold the subscriber
-    mutating func register<T: EventPresentable>(on mode: DispatchMode,
-                                                priority: EventBusPriority,
-                                                messageEvent: @escaping (T) -> Void) -> EventSubscription<T>
+    func register<T: EventPresentable>(on mode: DispatchMode,
+                                       priority: EventBusPriority,
+                                       messageEvent: @escaping (T) -> Void) -> EventSubscription<T>
 }

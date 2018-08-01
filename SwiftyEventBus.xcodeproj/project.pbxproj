@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429670E12110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
+		429670E22110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
+		429670E32110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
+		429670E52110634200861796 /* EventBusMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E42110634200861796 /* EventBusMiddleware.swift */; };
+		429670E62110634200861796 /* EventBusMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E42110634200861796 /* EventBusMiddleware.swift */; };
+		429670E72110634200861796 /* EventBusMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E42110634200861796 /* EventBusMiddleware.swift */; };
+		429670E9211075A100861796 /* EventBusSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E8211075A100861796 /* EventBusSafety.swift */; };
+		429670EA211075A100861796 /* EventBusSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E8211075A100861796 /* EventBusSafety.swift */; };
+		429670EB211075A100861796 /* EventBusSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E8211075A100861796 /* EventBusSafety.swift */; };
+		429670ED2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */; };
+		429670EE2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */; };
+		429670EF2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */; };
+		429670F02111A24300861796 /* EventBusMiddleware+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */; };
+		429670F22111A32C00861796 /* EventBusQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F12111A32C00861796 /* EventBusQueue.swift */; };
+		429670F32111A32C00861796 /* EventBusQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F12111A32C00861796 /* EventBusQueue.swift */; };
+		429670F42111A32C00861796 /* EventBusQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F12111A32C00861796 /* EventBusQueue.swift */; };
+		429670F52111A32C00861796 /* EventBusQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F12111A32C00861796 /* EventBusQueue.swift */; };
+		429670F72111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */; };
+		429670F82111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */; };
+		429670F92111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */; };
+		429670FA2111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */; };
+		429670FC2111A88E00861796 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
+		429670FD2111A88E00861796 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
+		429670FE2111A88E00861796 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
 		42C9C54C20B416AE00E197F7 /* SwiftyEventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C9C54220B416AE00E197F7 /* SwiftyEventBus.framework */; };
 		42C9C55320B416AE00E197F7 /* SwiftyEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C9C54520B416AE00E197F7 /* SwiftyEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C9C56720B4177000E197F7 /* EventBus+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C55D20B4177000E197F7 /* EventBus+Rx.swift */; };
@@ -100,6 +124,13 @@
 		17EF2DF2C0BFDBD2B01BB8D5 /* Pods-SwiftyEventBus-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyEventBus-macOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyEventBus-macOSTests/Pods-SwiftyEventBus-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2796E633370271B1D6FF4523 /* Pods_SwiftyEventBus_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyEventBus_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE5FCFA62DDC407B8150D94 /* Pods-SwiftyEventBus-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyEventBus-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyEventBus-watchOS/Pods-SwiftyEventBus-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		429670E02110630E00861796 /* EventBusSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSticky.swift; sourceTree = "<group>"; };
+		429670E42110634200861796 /* EventBusMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusMiddleware.swift; sourceTree = "<group>"; };
+		429670E8211075A100861796 /* EventBusSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSafety.swift; sourceTree = "<group>"; };
+		429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventBusMiddleware+Post.swift"; sourceTree = "<group>"; };
+		429670F12111A32C00861796 /* EventBusQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusQueue.swift; sourceTree = "<group>"; };
+		429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventBusPureMiddleWare+Observer.swift"; sourceTree = "<group>"; };
+		429670FB2111A88E00861796 /* EventBusFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusFeatureTests.swift; sourceTree = "<group>"; };
 		42C9C54220B416AE00E197F7 /* SwiftyEventBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyEventBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C9C54520B416AE00E197F7 /* SwiftyEventBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyEventBus.h; sourceTree = "<group>"; };
 		42C9C54620B416AE00E197F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +239,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429670DF211062EB00861796 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				429670E02110630E00861796 /* EventBusSticky.swift */,
+				429670E42110634200861796 /* EventBusMiddleware.swift */,
+				429670EC2111A24300861796 /* EventBusMiddleware+Post.swift */,
+				429670F62111A63600861796 /* EventBusPureMiddleWare+Observer.swift */,
+				429670E8211075A100861796 /* EventBusSafety.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		42C9C53820B416AE00E197F7 = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +296,7 @@
 				42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */,
 				42C9C57120B4177C00E197F7 /* EventBusTests.swift */,
 				42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */,
+				429670FB2111A88E00861796 /* EventBusFeatureTests.swift */,
 				42C9C55220B416AE00E197F7 /* Info.plist */,
 			);
 			path = SwiftyEventBusTests;
@@ -270,7 +314,9 @@
 		42C9C55F20B4177000E197F7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				429670DF211062EB00861796 /* Features */,
 				42C9C56020B4177000E197F7 /* EventBus+Observable.swift */,
+				429670F12111A32C00861796 /* EventBusQueue.swift */,
 				42C9C56120B4177000E197F7 /* EventPresentable.swift */,
 				42C9C56220B4177000E197F7 /* EventDispatch.swift */,
 				42C9C56320B4177000E197F7 /* EventSubscription.swift */,
@@ -378,6 +424,7 @@
 				42C9C53E20B416AE00E197F7 /* Frameworks */,
 				42C9C53F20B416AE00E197F7 /* Headers */,
 				42C9C54020B416AE00E197F7 /* Resources */,
+				429670DE21105E2400861796 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -513,7 +560,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = souche;
+				ORGANIZATIONNAME = Alloc;
 				TargetAttributes = {
 					42C9C54120B416AE00E197F7 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -650,6 +697,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		429670DE21105E2400861796 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		511D05FABA76E35D65B43AEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -814,12 +875,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429670E12110630E00861796 /* EventBusSticky.swift in Sources */,
 				42C9C56B20B4177000E197F7 /* EventDispatch.swift in Sources */,
+				429670ED2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C56C20B4177000E197F7 /* EventSubscription.swift in Sources */,
 				42C9C56A20B4177000E197F7 /* EventPresentable.swift in Sources */,
 				42C9C56E20B4177000E197F7 /* EventBus+Postable.swift in Sources */,
 				42C9C56920B4177000E197F7 /* EventBus+Observable.swift in Sources */,
+				429670E52110634200861796 /* EventBusMiddleware.swift in Sources */,
+				429670E9211075A100861796 /* EventBusSafety.swift in Sources */,
+				429670F22111A32C00861796 /* EventBusQueue.swift in Sources */,
 				42C9C56720B4177000E197F7 /* EventBus+Rx.swift in Sources */,
+				429670F72111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
 				42C9C56D20B4177000E197F7 /* EventBus.swift in Sources */,
 				42C9C56F20B4177000E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C56820B4177000E197F7 /* EventSubscription+Rx.swift in Sources */,
@@ -833,6 +900,7 @@
 				42C9C57320B4177C00E197F7 /* EventBusRxTests.swift in Sources */,
 				42C9C57520B4177C00E197F7 /* EventBusDispatchTests.swift in Sources */,
 				42C9C57420B4177C00E197F7 /* EventBusTests.swift in Sources */,
+				429670FC2111A88E00861796 /* EventBusFeatureTests.swift in Sources */,
 				42C9C62020BC270800E197F7 /* EventBusPriorityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,10 +914,13 @@
 				42C9C59C20B6B0D500E197F7 /* EventBus.swift in Sources */,
 				42C9C59B20B6B0D500E197F7 /* EventSubscription.swift in Sources */,
 				42C9C5A020B6B0D500E197F7 /* EventSubscription+Rx.swift in Sources */,
+				429670F82111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
 				42C9C59A20B6B0D500E197F7 /* EventDispatch.swift in Sources */,
 				42C9C59F20B6B0D500E197F7 /* EventBus+Rx.swift in Sources */,
 				42C9C59820B6B0D500E197F7 /* EventBus+Observable.swift in Sources */,
 				42C9C59D20B6B0D500E197F7 /* EventBus+Postable.swift in Sources */,
+				429670F32111A32C00861796 /* EventBusQueue.swift in Sources */,
+				429670EE2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,12 +928,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429670E22110630E00861796 /* EventBusSticky.swift in Sources */,
 				42C9C5EC20B6B56A00E197F7 /* EventPresentable.swift in Sources */,
+				429670EF2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C5F120B6B56A00E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C5EF20B6B56A00E197F7 /* EventBus.swift in Sources */,
 				42C9C5EE20B6B56A00E197F7 /* EventSubscription.swift in Sources */,
 				42C9C5F320B6B56A00E197F7 /* EventSubscription+Rx.swift in Sources */,
+				429670E62110634200861796 /* EventBusMiddleware.swift in Sources */,
+				429670EA211075A100861796 /* EventBusSafety.swift in Sources */,
+				429670F42111A32C00861796 /* EventBusQueue.swift in Sources */,
 				42C9C5ED20B6B56A00E197F7 /* EventDispatch.swift in Sources */,
+				429670F92111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
 				42C9C5F220B6B56A00E197F7 /* EventBus+Rx.swift in Sources */,
 				42C9C5EB20B6B56A00E197F7 /* EventBus+Observable.swift in Sources */,
 				42C9C5F020B6B56A00E197F7 /* EventBus+Postable.swift in Sources */,
@@ -877,6 +954,7 @@
 				42C9C63520BD6FC500E197F7 /* EventBusTests.swift in Sources */,
 				42C9C63620BD6FC500E197F7 /* EventBusPriorityTests.swift in Sources */,
 				42C9C63320BD6FC500E197F7 /* EventBusDispatchTests.swift in Sources */,
+				429670FD2111A88E00861796 /* EventBusFeatureTests.swift in Sources */,
 				42C9C63420BD6FC500E197F7 /* EventBusRxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -885,12 +963,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429670E32110630E00861796 /* EventBusSticky.swift in Sources */,
 				42C9C5E320B6B14A00E197F7 /* EventPresentable.swift in Sources */,
+				429670F02111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C5E820B6B14A00E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C5E620B6B14A00E197F7 /* EventBus.swift in Sources */,
 				42C9C5E520B6B14A00E197F7 /* EventSubscription.swift in Sources */,
 				42C9C5EA20B6B14A00E197F7 /* EventSubscription+Rx.swift in Sources */,
+				429670E72110634200861796 /* EventBusMiddleware.swift in Sources */,
+				429670EB211075A100861796 /* EventBusSafety.swift in Sources */,
+				429670F52111A32C00861796 /* EventBusQueue.swift in Sources */,
 				42C9C5E420B6B14A00E197F7 /* EventDispatch.swift in Sources */,
+				429670FA2111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
 				42C9C5E920B6B14A00E197F7 /* EventBus+Rx.swift in Sources */,
 				42C9C5E220B6B14A00E197F7 /* EventBus+Observable.swift in Sources */,
 				42C9C5E720B6B14A00E197F7 /* EventBus+Postable.swift in Sources */,
@@ -905,6 +989,7 @@
 				42C9C63920BD6FC500E197F7 /* EventBusTests.swift in Sources */,
 				42C9C63A20BD6FC500E197F7 /* EventBusPriorityTests.swift in Sources */,
 				42C9C63720BD6FC500E197F7 /* EventBusDispatchTests.swift in Sources */,
+				429670FE2111A88E00861796 /* EventBusFeatureTests.swift in Sources */,
 				42C9C63820BD6FC500E197F7 /* EventBusRxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
