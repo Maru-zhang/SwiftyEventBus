@@ -33,7 +33,7 @@ class EventBusTests: QuickSpec {
                 it("get two string message event", closure: {
                     var count = 0
                     waitUntil(action: { (done) in
-                        self.stringBag = EventBus.default.register(messageEvent: { (x: String) in
+                        self.stringBag = EventBus.default.register(messageEvent: { (_) in
                             count += 1
                             if (count == 2) {
                                 done()
@@ -82,7 +82,7 @@ class EventBusTests: QuickSpec {
             })
             describe("safe post int value", {
                 it("throw a error for post", closure: {
-                    expect { try EventBus.default.safePost(100) }.to(throwError(EventBusPostError.useless))
+                    expect { try EventBus.default.safe.post(100) }.to(throwError(EventBusPostError.useless))
                 })
             })
         }
