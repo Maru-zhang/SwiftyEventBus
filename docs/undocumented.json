@@ -1,0 +1,152 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus+Observable.swift",
+      "line": 10,
+      "symbol": "EventBusObservable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus+Postable.swift",
+      "line": 14,
+      "symbol": "EventBusPostError.useless",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus+Postable.swift",
+      "line": 17,
+      "symbol": "EventBusPostable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": null,
+      "symbol": "EventBus",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": null,
+      "symbol": "EventBus",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 10,
+      "symbol": "EventBinder",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 22,
+      "symbol": "EventBusPriority.value",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 24,
+      "symbol": "EventBusPriority.low",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 28,
+      "symbol": "EventBusPriority.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 32,
+      "symbol": "EventBusPriority.high",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": 37,
+      "symbol": "EventBus",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventDispatch.swift",
+      "line": 16,
+      "symbol": "DispatchMode.same",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventDispatch.swift",
+      "line": 17,
+      "symbol": "DispatchMode.main",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventPresentable.swift",
+      "line": null,
+      "symbol": "EventPresentable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventPresentable.swift",
+      "line": 10,
+      "symbol": "EventPresentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventPresentable.swift",
+      "line": 11,
+      "symbol": "EventPresentable.processIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventPresentable.swift",
+      "line": 16,
+      "symbol": "EventPresentable.processIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventSubscriber.swift",
+      "line": 10,
+      "symbol": "EventSubscriber",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventSubscription.swift",
+      "line": null,
+      "symbol": "EventSubscription",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventSubscription.swift",
+      "line": 10,
+      "symbol": "EventSubscription",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Rx/EventSubscription+Rx.swift",
+      "line": 13,
+      "symbol": "EventSubscription.dispose()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/maru/Console/SwiftyEventBus"
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SwiftyEventBus  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="SwiftyEventBus  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SwiftyEventBus Docs</a> (38% documented)</p>
+        <p class="header-right"><a href="https://github.com/Maru-zhang/SwiftyEventBus"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SwiftyEventBus Reference</a>
+        <img id="carat" src="img/carat.png" />
+        SwiftyEventBus  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EventBus.html">EventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/s:14SwiftyEventBus0B10SubscriberC">EventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EventSubscription.html">EventSubscription</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DispatchMode.html">DispatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventBusPostError.html">EventBusPostError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventBusPriority.html">EventBusPriority</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EventBusObservable.html">EventBusObservable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EventBusPostable.html">EventBusPostable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EventPresentable.html">EventPresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:14SwiftyEventBus0B6Bindera">EventBinder</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><div align=center>
+<img src="https://github.com/Maru-zhang/SwiftyEventBus/blob/master/Screenshots/SwiftyEventBus-Logo.png"/></p>
+
+<p><div align=left></p>
+<h1 id='swiftyeventbus' class='heading'>SwiftyEventBus</h1>
+
+<p><img src="https://img.shields.io/badge/language-swift-orange.svg" alt="">
+<a href="https://travis-ci.org/Maru-zhang/SwiftyEventBus"><img src="https://img.shields.io/travis/Maru-zhang/SwiftyEventBus.svg?style=flat" alt="CI Status"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://codecov.io/gh/Maru-zhang/SwiftyEventBus"><img src="https://codecov.io/gh/Maru-zhang/SwiftyEventBus/branch/master/graph/badge.svg" alt="codecov"></a>
+<a href="https://cocoapods.org/pods/SwiftyEventBus"><img src="https://img.shields.io/cocoapods/v/SwiftyEventBus.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/SwiftyEventBus"><img src="https://img.shields.io/cocoapods/l/SwiftyEventBus.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/SwiftyEventBus"><img src="https://img.shields.io/cocoapods/p/SwiftyEventBus.svg?style=flat" alt="Platform"></a></p>
+
+<p>SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.</p>
+
+<ul>
+<li>simplifies the communication between components</li>
+<li>make your code simple and elegant</li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p><code>SwiftyEventBus</code> is very easy to use, you just need 3 steps:</p>
+<h4 id='1-strong-define-strong' class='heading'>1.<strong>Define</strong></h4>
+
+<p>The stuff that you want to delivery need implement <code><a href="Protocols/EventPresentable.html">EventPresentable</a></code> Protocol, most of foundation type already implemented, such as <code>Int</code>, <code>Float</code>, <code>String</code>, etc&hellip;</p>
+
+<p>If you have custom type, then you should make it confirm <code><a href="Protocols/EventPresentable.html">EventPresentable</a></code> Protocol.</p>
+<h4 id='2-strong-register-strong' class='heading'>2.<strong>Register</strong></h4>
+
+<p>You can register in anywhere, it will always observe until the <code><a href="Classes/EventSubscription.html">EventSubscription</a></code> object been released.</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DemoViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+
+    <span class="k">var</span> <span class="nv">ob</span><span class="p">:</span> <span class="kt">EventSubscription</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;!</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+        <span class="n">ob</span> <span class="o">=</span> <span class="kt">EventBus</span><span class="o">.</span><span class="err">`</span><span class="k">default</span><span class="err">`</span><span class="o">.</span><span class="n">register</span> <span class="p">{</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">in</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='3-strong-post-strong' class='heading'>3.<strong>Post</strong></h4>
+
+<p>Finally, you just need to post any type that implement <code><a href="Protocols/EventPresentable.html">EventPresentable</a></code>.</p>
+<pre class="highlight swift"><code><span class="kt">EventBus</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">post</span><span class="p">(</span><span class="s">"Foo"</span><span class="p">)</span>
+</code></pre>
+<h3 id='advance' class='heading'>Advance</h3>
+<h4 id='safe-post' class='heading'>Safe Post</h4>
+
+<p>Sometime, you maybe post a message that no one obseving, this is unsafety behaviour, then you can use this:</p>
+<pre class="highlight swift"><code><span class="kt">EventBus</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">safePost</span><span class="p">(</span><span class="s">"Foo"</span><span class="p">)</span>
+</code></pre>
+
+<p>If there is no observer subscribe this kind of message, <code>EventBus.default.safePost(&quot;Foo&quot;)</code> will raise <code><a href="Enums/EventBusPostError.html#/s:14SwiftyEventBus0bC9PostErrorO7uselessA2CmF">EventBusPostError.useless</a></code> Exception, you can catch it and handle this.</p>
+<pre class="highlight swift"><code><span class="c1">/// handle EventBusPostError excetion</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="kt">EventBus</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">safePost</span><span class="p">(</span><span class="s">"foo"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='rx-extension' class='heading'>Rx-Extension</h3>
+
+<p>if you project using <code>RxSwift</code>, maybe you need this to bridge <code>SwiftyEventBus</code> to <code>Rx</code>.</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SwiftyEventBus/Rx'</span>
+</code></pre>
+
+<p>after that, you can use <code>SwiftyEventBus</code> in <code>RxSwift</code> world.🎉</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bag</span><span class="p">:</span> <span class="kt">DisposeBag</span><span class="p">?</span> <span class="o">=</span> <span class="kt">DisposeBag</span><span class="p">()</span>
+<span class="kt">EventBus</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="kt">String</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">subscribe</span><span class="p">(</span><span class="nv">onNext</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">in</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">/// "foo"</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="nf">disposed</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="n">bag</span><span class="o">!</span><span class="p">)</span>
+<span class="kt">EventBus</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">post</span><span class="p">(</span><span class="s">"foo"</span><span class="p">)</span>
+</code></pre>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>SwiftyEventBus is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SwiftyEventBus'</span>
+</code></pre>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Maru-zhang, <a href="mailto:maru-zhang@foxmail.com">maru-zhang@foxmail.com</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>SwiftyEventBus is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/Maru-zhang" target="_blank" rel="external">Maru</a>. All rights reserved. (Last updated: 2018-07-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
