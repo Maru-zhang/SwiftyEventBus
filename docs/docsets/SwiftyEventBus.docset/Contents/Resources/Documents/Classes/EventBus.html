@@ -14,7 +14,7 @@
     <a title="EventBus Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SwiftyEventBus Docs</a> (38% documented)</p>
+        <p><a href="../index.html">SwiftyEventBus Docs</a> (33% documented)</p>
         <p class="header-right"><a href="https://github.com/Maru-zhang/SwiftyEventBus"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -60,6 +60,15 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Extensions/EventBusDangerMiddleWare.html">EventBusDangerMiddleWare</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventBusMiddleWare.html">EventBusMiddleWare</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/EventBusPureMiddleWare.html">EventBusPureMiddleWare</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/Reactive.html">Reactive</a>
               </li>
             </ul>
@@ -74,15 +83,13 @@
                 <a href="../Protocols/EventBusPostable.html">EventBusPostable</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/EventPresentable.html">EventPresentable</a>
+                <a href="../Protocols/EventBusSafePostable.html">EventBusSafePostable</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Typealiases.html">Type Aliases</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Typealiases.html#/s:14SwiftyEventBus0B6Bindera">EventBinder</a>
+                <a href="../Protocols/EventBusSafety.html">EventBusSafety</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EventPresentable.html">EventPresentable</a>
               </li>
             </ul>
           </li>
@@ -234,32 +241,6 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14SwiftyEventBus0bC8PostableP8safePostyqd__KAA0B11PresentableRd__lF"></a>
-                    <a name="//apple_ref/swift/Method/safePost(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SwiftyEventBus0bC8PostableP8safePostyqd__KAA0B11PresentableRd__lF">safePost(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">safePost</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">cargo</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EventPresentable.html">EventPresentable</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -283,7 +264,38 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">on</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DispatchMode.html">DispatchMode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">same</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/EventBusPriority.html">EventBusPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="err">`</span><span class="k">default</span><span class="err">`</span><span class="p">,</span> <span class="nv">messageEvent</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EventSubscription.html">EventSubscription</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EventPresentable.html">EventPresentable</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">on</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/DispatchMode.html">DispatchMode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">same</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/EventBusPriority.html">EventBusPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="err">`</span><span class="k">default</span><span class="err">`</span><span class="p">,</span> <span class="nv">messageEvent</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/EventSubscription.html">EventSubscription</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EventPresentable.html">EventPresentable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SwiftyEventBus0bC0C4safeAA0bC12SafePostable_pvp"></a>
+                    <a name="//apple_ref/swift/Property/safe" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SwiftyEventBus0bC0C4safeAA0bC12SafePostable_pvp">safe</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">safe</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EventBusSafePostable.html">EventBusSafePostable</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -295,7 +307,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Maru-zhang" target="_blank" rel="external">Maru</a>. All rights reserved. (Last updated: 2018-07-25)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Maru-zhang" target="_blank" rel="external">Maru</a>. All rights reserved. (Last updated: 2018-08-01)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

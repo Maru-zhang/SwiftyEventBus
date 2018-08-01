@@ -22,6 +22,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus+Postable.swift",
+      "line": 25,
+      "symbol": "EventBusSafePostable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
+      "line": null,
+      "symbol": "EventBus",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
       "line": null,
       "symbol": "EventBus",
@@ -37,42 +51,35 @@
     },
     {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 10,
-      "symbol": "EventBinder",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "EventBusPriority.value",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 24,
+      "line": 22,
       "symbol": "EventBusPriority.low",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 28,
+      "line": 26,
       "symbol": "EventBusPriority.default",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 32,
+      "line": 30,
       "symbol": "EventBusPriority.high",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/EventBus.swift",
-      "line": 37,
+      "line": 35,
       "symbol": "EventBus",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
@@ -138,6 +145,62 @@
       "line": 10,
       "symbol": "EventSubscription",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusMiddleware.swift",
+      "line": null,
+      "symbol": "EventBusDangerMiddleWare",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusMiddleware.swift",
+      "line": null,
+      "symbol": "EventBusMiddleWare",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusMiddleware.swift",
+      "line": null,
+      "symbol": "EventBusMiddleWare",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusMiddleware.swift",
+      "line": null,
+      "symbol": "EventBusPureMiddleWare",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusSafety.swift",
+      "line": 11,
+      "symbol": "EventBusSafety",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusSafety.swift",
+      "line": 12,
+      "symbol": "EventBusSafety.safe",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusSafety.swift",
+      "line": 17,
+      "symbol": "EventBus.safe",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maru/Console/SwiftyEventBus/SwiftyEventBus/Core/Features/EventBusSafety.swift",
+      "line": 24,
+      "symbol": "EventBusMiddleWare.safe",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
