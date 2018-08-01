@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class EventSubscription<T: EventPresentable>{
+public class EventSubscription<T: EventPresentable> {
 
     /// The subscriber who is working
     let entity: EventSubscriber<T>
