@@ -19,7 +19,7 @@ public protocol EventBusPostable {
     /// Post a value to all subsctiber
     ///
     /// - Parameter cargo: The playload of any type
-    func post<T>(_ cargo: T) where T: EventPresentable
+    func post<T>(_ cargo: T)
 }
 
 public protocol EventBusSafePostable {
@@ -28,5 +28,5 @@ public protocol EventBusSafePostable {
     /// make sure there is one subscriber at least
     ///
     /// - Parameter cargo: The playload of any type
-    func post<T>(_ cargo: T) throws where T: EventPresentable
+    func post<T>(_ cargo: T) throws
 }

@@ -9,8 +9,8 @@ import Foundation
 
 extension EventBusPureMiddleWare: EventBusPostable {
 
-    public func post<T>(_ cargo: T) where T: EventPresentable {
-        let identifier = T.processIdentifier
+    public func post<T>(_ cargo: T) {
+        let identifier = EventID(T.self)
         if (support(.sticky)) {
             host.replayBuff.enqueue(cargo)
         }
@@ -23,8 +23,8 @@ extension EventBusPureMiddleWare: EventBusPostable {
 
 extension EventBusDangerMiddleWare: EventBusSafePostable {
 
-    public func post<T>(_ cargo: T) throws where T: EventPresentable {
-        let identifier = T.processIdentifier
+    public func post<T>(_ cargo: T) throws {
+        let identifier = EventID(T.self)
         if (support(.sticky)) {
             host.replayBuff.enqueue(cargo)
         }

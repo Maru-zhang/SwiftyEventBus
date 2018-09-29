@@ -12,11 +12,11 @@ class EventBusBuffQueue {
 
     var map = [String: Any?]()
 
-    func enqueue<T>(_ cargo: T) where T: EventPresentable {
-        map[T.processIdentifier] = cargo
+    func enqueue<T>(_ cargo: T) {
+        map[EventID(T.self)] = cargo
     }
 
-    func dequeue<T>() -> T? where T: EventPresentable {
-        return map[T.processIdentifier] as? T
+    func dequeue<T>() -> T? {
+        return map[EventID(T.self)] as? T
     }
 }
