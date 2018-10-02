@@ -7,22 +7,10 @@
 
 import Foundation
 
-public protocol EventPresentable {
-    static var processIdentifier: String { get }
+/// Get unique string for `T` type
+///
+/// - Parameter type: type `T`
+/// - Returns: a string instance that present `T`
+func EventID<T>(_ type: T.Type) -> String {
+    return String(reflecting: type)
 }
-
-extension EventPresentable {
-
-    public static var processIdentifier: String {
-        return String(reflecting: self)
-    }
-}
-
-extension String: EventPresentable {}
-extension Int: EventPresentable {}
-extension Int8: EventPresentable {}
-extension Int16: EventPresentable {}
-extension Int32: EventPresentable {}
-extension Int64: EventPresentable {}
-extension Array: EventPresentable {}
-extension Set: EventPresentable {}

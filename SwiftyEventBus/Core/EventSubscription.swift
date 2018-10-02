@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class EventSubscription<T: EventPresentable> {
+public class EventSubscription<T> {
 
     /// The subscriber who is working
     let entity: EventSubscriber<T>
@@ -24,7 +24,7 @@ public class EventSubscription<T: EventPresentable> {
         defer {
             objc_sync_exit(self)
         }
-        let identifier = T.processIdentifier
+        let identifier = EventID(T.self)
         if var set = eventBus.observers[identifier] as? Set<EventSubscriber<T>> {
             set.remove(entity)
             eventBus.observers[identifier] = set

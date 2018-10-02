@@ -53,7 +53,7 @@ class EventBusMiddleWare {
         fatalError("this method should been override by subclass.")
     }
 
-    func performPost<T: EventPresentable>(with queue: Set<EventSubscriber<T>>, cargo: T) {
+    func performPost<T>(with queue: Set<EventSubscriber<T>>, cargo: T) {
         /// the priority more largger, the time receive message more earlier.
         let sortedQueue = queue.sorted { (left, right) -> Bool in
             switch (left.priority, right.priority) {

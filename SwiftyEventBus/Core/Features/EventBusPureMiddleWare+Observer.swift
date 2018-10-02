@@ -10,8 +10,8 @@ import Foundation
 
 extension EventBusMiddleWare: EventBusObservable {
 
-    public func register<T>(on mode: DispatchMode = .same, priority: EventBusPriority = .`default`, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> where T: EventPresentable {
-        let identifier = T.processIdentifier
+    public func register<T>(on mode: DispatchMode = .same, priority: EventBusPriority = .`default`, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> {
+        let identifier = EventID(T.self)
         let subscriber = EventSubscriber(mode: mode, priority: priority, eventHandler: messageEvent)
         let subscription = EventSubscription(entity: subscriber, eventBus: host)
         if (support(.sticky)) {
