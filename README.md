@@ -22,7 +22,7 @@ SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.
 
 ## Usage
 
-`SwiftyEventBus` is very easy to use, you just need 3 steps:
+`SwiftyEventBus` is very easy to use, you just need two steps:
 
 #### 1.**Register**
 
