@@ -8,3 +8,20 @@ target 'SwiftyEventBus' do
         pod 'Nimble'
     end
 end
+
+target 'SwiftyEventBus-watchOS' do
+    use_frameworks!
+    pod 'RxSwift'
+end
+
+target 'SwiftyEventBus-macOS' do
+    platform :osx, '10.10'
+    use_frameworks!
+    pod 'RxSwift'
+end
+
+target 'SwiftyEventBus-tvOS' do
+    platform :tvos, '9.0'
+    use_frameworks!
+    pod 'RxSwift'
+end

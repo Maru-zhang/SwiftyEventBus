@@ -8,19 +8,16 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Maru-zhang/SwiftyEventBus.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = "8.0"
-  s.tvos.deployment_target = "9.0"
-  s.osx.deployment_target = "10.10"
-  s.watchos.deployment_target = "2.0"
   
   s.swift_version = '4.0'
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |ss|
-    ss.source_files = 'SwiftyEventBus/Core/**/*.swift'
+    ss.source_files = 'Sources/Core/**/*.swift'
   end
 
   s.subspec 'Rx' do |ss|
-    ss.source_files = 'SwiftyEventBus/Rx/**/*.swift'
+    ss.source_files = 'Sources/Rx/**/*.swift'
     ss.dependency 'SwiftyEventBus/Core'
     ss.dependency 'RxSwift'
   end
