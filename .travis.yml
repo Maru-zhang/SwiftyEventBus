@@ -17,7 +17,7 @@ script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace SwiftyEventBus.xcworkspace -scheme SwiftyEventBus -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2' ONLY_ACTIVE_ARCH=NO
 - pod lib lint --allow-warnings
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
+  - bash <(curl -s https://codecov.io/bash) -J SwiftyEventBus -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
