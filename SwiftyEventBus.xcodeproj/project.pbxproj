@@ -254,7 +254,7 @@
 		42C9C53820B416AE00E197F7 = {
 			isa = PBXGroup;
 			children = (
-				42C9C54420B416AE00E197F7 /* SwiftyEventBus */,
+				42C9C54420B416AE00E197F7 /* Sources */,
 				42C9C54F20B416AE00E197F7 /* SwiftyEventBusTests */,
 				42C9C5B220B6B10300E197F7 /* SwiftyEventBus-tvOSTests */,
 				42C9C5CE20B6B12B00E197F7 /* SwiftyEventBus-macOSTests */,
@@ -278,7 +278,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42C9C54420B416AE00E197F7 /* SwiftyEventBus */ = {
+		42C9C54420B416AE00E197F7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				42C9C55F20B4177000E197F7 /* Core */,
@@ -286,7 +286,7 @@
 				42C9C54520B416AE00E197F7 /* SwiftyEventBus.h */,
 				42C9C54620B416AE00E197F7 /* Info.plist */,
 			);
-			path = SwiftyEventBus;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		42C9C54F20B416AE00E197F7 /* SwiftyEventBusTests */ = {
@@ -1146,7 +1146,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyEventBus/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1173,7 +1173,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyEventBus/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
