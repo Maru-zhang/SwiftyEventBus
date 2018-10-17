@@ -1,4 +1,2 @@
-coverage:
-  ignore:
-    - Carthage
-    - Tests
+ignore:
+    - SwiftyEventBusTests
