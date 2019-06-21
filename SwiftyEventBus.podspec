@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyEventBus'
-  s.version          = '0.3.0'
+  s.version          = '1.0.0.beta'
   s.summary          = 'SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.'
   s.homepage         = 'https://github.com/Maru-zhang/SwiftyEventBus'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.watchos.deployment_target = "2.0"
   
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |ss|
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.subspec 'Rx' do |ss|
     ss.source_files = 'SwiftyEventBus/Rx/**/*.swift'
     ss.dependency 'SwiftyEventBus/Core'
-    ss.dependency 'RxSwift'
+    ss.dependency 'RxSwift', '~>5.0.0'
   end
 end
