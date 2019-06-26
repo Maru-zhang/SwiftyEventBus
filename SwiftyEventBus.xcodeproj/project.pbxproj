@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4216EBDF22C3E63B0067ABF1 /* EventBusMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E42110634200861796 /* EventBusMiddleware.swift */; };
 		429670E12110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E22110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E32110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
@@ -897,6 +898,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C9C59920B6B0D500E197F7 /* EventPresentable.swift in Sources */,
+				4216EBDF22C3E63B0067ABF1 /* EventBusMiddleware.swift in Sources */,
 				42C9C59E20B6B0D500E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C59C20B6B0D500E197F7 /* EventBus.swift in Sources */,
 				42C9C59B20B6B0D500E197F7 /* EventSubscription.swift in Sources */,
