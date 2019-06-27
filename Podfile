@@ -16,8 +16,8 @@ end
 
 target 'SwiftyEventBus-watchOS' do
   platform :watchos, '4.3'
-    use_frameworks!
-    pod 'RxSwift'
+  use_frameworks!
+  pod 'RxSwift'
 end
 
 target 'SwiftyEventBus-macOS' do

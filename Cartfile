@@ -1,0 +1,2 @@
+github "Quick/Quick" "master"
+github "ReactiveX/RxSwift" ~> 5.0

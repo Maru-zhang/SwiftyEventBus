@@ -100,11 +100,21 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+### CocoaPods
+
 SwiftyEventBus is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SwiftyEventBus'
+```
+
+### 
+
+SwiftyEventBus is also available on `Carthage`, please add this to `Cartfile`:
+
+```
+github "Maru-zhang/SwiftyEventBus"
 ```
 
 ## Author
