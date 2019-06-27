@@ -4,14 +4,16 @@ before_install: true
 install: true
 cache: cocoapods
 podfile: Podfile
-xcode_workspace: SwiftyEventBus.xcworkspace
 xcode_scheme: SwiftyEventBus
+xcode_project: SwiftyEventBus.xcodeproj
 env:
   global:
   - FRAMEWORK_NAME=SwiftyEventBus
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage bootstrap
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -scheme SwiftyEventBus -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_success:
