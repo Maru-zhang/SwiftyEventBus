@@ -13,7 +13,7 @@ before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -scheme SwiftyEventBus -destination 'generic/platform=iOS' ONLY_ACTIVE_ARCH=NO
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -scheme SwiftyEventBus -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_deploy:
