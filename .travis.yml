@@ -13,7 +13,7 @@ before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
 before_script:
-- carthage bootstrap
+- carthage update
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -scheme SwiftyEventBus -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_success:
