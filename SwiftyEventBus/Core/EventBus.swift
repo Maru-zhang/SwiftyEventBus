@@ -44,7 +44,7 @@ public class EventBus {
     /// Discuss: we use string of type as key, and a set of `EventSubscriber`
     /// as value. when register or unregister, we just need to modify corresponding
     /// set.
-    var observers: [String: Any]
+    public var observers: [String: Any]
 
     /// The dictinary that contain the lastest N message event
     /// for support sticky and replay event

@@ -11,6 +11,6 @@ import Foundation
 ///
 /// - Parameter type: type `T`
 /// - Returns: a string instance that present `T`
-func EventID<T>(_ type: T.Type) -> String {
+public func EventID<T>(_ type: T.Type) -> String {
     return String(reflecting: type)
 }

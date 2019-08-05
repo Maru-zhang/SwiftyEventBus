@@ -10,27 +10,15 @@
 		0A64C1EA3F3FF7D660124018 /* Pods_SwiftyEventBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAD88097208E164F61C056C /* Pods_SwiftyEventBusTests.framework */; };
 		11BB2FDD48D13FE972B4B5A1 /* Pods_SwiftyEventBus_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84002C296D5A2A955300CDFF /* Pods_SwiftyEventBus_macOSTests.framework */; };
 		4216EBDF22C3E63B0067ABF1 /* EventBusMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E42110634200861796 /* EventBusMiddleware.swift */; };
-		4216EC0822C3FA250067ABF1 /* EventBusDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57220B4177C00E197F7 /* EventBusDispatchTests.swift */; };
-		4216EC0A22C3FA250067ABF1 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
-		4216EC0B22C3FA250067ABF1 /* EventBusPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */; };
-		4216EC0C22C3FA250067ABF1 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
 		4216EC1C22C463D50067ABF1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216EC1B22C463D50067ABF1 /* RxSwift.framework */; };
 		4216EC1E22C463EA0067ABF1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216EC1D22C463EA0067ABF1 /* Quick.framework */; };
 		4216EC2022C463FB0067ABF1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216EC1F22C463FB0067ABF1 /* Nimble.framework */; };
 		4216EC2522C465290067ABF1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216EC1B22C463D50067ABF1 /* RxSwift.framework */; };
-		4216EC2822C468C90067ABF1 /* EventBus+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C55D20B4177000E197F7 /* EventBus+Rx.swift */; };
-		4216EC2922C468C90067ABF1 /* EventSubscription+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C55E20B4177000E197F7 /* EventSubscription+Rx.swift */; };
-		4216EC2A22C468CF0067ABF1 /* EventBusRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */; };
-		4216EC2B22C468D40067ABF1 /* EventBusDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57220B4177C00E197F7 /* EventBusDispatchTests.swift */; };
-		4216EC2C22C468D40067ABF1 /* EventBusRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */; };
-		4216EC2D22C468D40067ABF1 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
-		4216EC2E22C468D40067ABF1 /* EventBusPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */; };
-		4216EC2F22C468D40067ABF1 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
-		4216EC3022C468D40067ABF1 /* EventBusDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57220B4177C00E197F7 /* EventBusDispatchTests.swift */; };
-		4216EC3122C468D40067ABF1 /* EventBusRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */; };
-		4216EC3222C468D40067ABF1 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
-		4216EC3322C468D40067ABF1 /* EventBusPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */; };
-		4216EC3422C468D40067ABF1 /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
+		4254026922F8376D007AAD6A /* EventBusDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57220B4177C00E197F7 /* EventBusDispatchTests.swift */; };
+		4254026A22F8376D007AAD6A /* EventBusRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */; };
+		4254026B22F8376D007AAD6A /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
+		4254026C22F8376D007AAD6A /* EventBusPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */; };
+		4254026D22F8376D007AAD6A /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
 		429670E12110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E22110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E32110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
@@ -86,7 +74,6 @@
 		42C9C5EF20B6B56A00E197F7 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C56420B4177000E197F7 /* EventBus.swift */; };
 		42C9C5F020B6B56A00E197F7 /* EventBus+Postable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C56520B4177000E197F7 /* EventBus+Postable.swift */; };
 		42C9C5F120B6B56A00E197F7 /* EventSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C56620B4177000E197F7 /* EventSubscriber.swift */; };
-		42D42EB922F81D860002DD10 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
 		42D42EBA22F81DC80002DD10 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		42D42EBB22F81DC80002DD10 /* EventBusSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E8211075A100861796 /* EventBusSafety.swift */; };
 		577AED43BD7B4C9A9CAE56E7 /* Pods_SwiftyEventBus_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB05D8C3DAFF99DE7CD7220 /* Pods_SwiftyEventBus_macOS.framework */; };
@@ -129,6 +116,7 @@
 		4216EC1B22C463D50067ABF1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		4216EC1D22C463EA0067ABF1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4216EC1F22C463FB0067ABF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftyEventBusRx.podspec; sourceTree = "<group>"; };
 		429670E02110630E00861796 /* EventBusSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSticky.swift; sourceTree = "<group>"; };
 		429670E42110634200861796 /* EventBusMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusMiddleware.swift; sourceTree = "<group>"; };
 		429670E8211075A100861796 /* EventBusSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSafety.swift; sourceTree = "<group>"; };
@@ -282,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				42F41AE722BC6A00003A61D6 /* SwiftyEventBus.podspec */,
+				4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */,
 				42C9C54420B416AE00E197F7 /* SwiftyEventBus */,
 				42C9C54F20B416AE00E197F7 /* SwiftyEventBusTests */,
 				42C9C5B220B6B10300E197F7 /* SwiftyEventBus-tvOSTests */,
@@ -951,13 +940,10 @@
 				42C9C56A20B4177000E197F7 /* EventPresentable.swift in Sources */,
 				42C9C56E20B4177000E197F7 /* EventBus+Postable.swift in Sources */,
 				42C9C56920B4177000E197F7 /* EventBus+Observable.swift in Sources */,
-				4216EC2822C468C90067ABF1 /* EventBus+Rx.swift in Sources */,
 				429670E52110634200861796 /* EventBusMiddleware.swift in Sources */,
 				429670E9211075A100861796 /* EventBusSafety.swift in Sources */,
-				4216EC2922C468C90067ABF1 /* EventSubscription+Rx.swift in Sources */,
 				429670F22111A32C00861796 /* EventBusQueue.swift in Sources */,
 				429670F72111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
-				42D42EB922F81D860002DD10 /* EventBusTests.swift in Sources */,
 				42C9C56D20B4177000E197F7 /* EventBus.swift in Sources */,
 				42C9C56F20B4177000E197F7 /* EventSubscriber.swift in Sources */,
 			);
@@ -967,11 +953,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4216EC0A22C3FA250067ABF1 /* EventBusTests.swift in Sources */,
-				4216EC0822C3FA250067ABF1 /* EventBusDispatchTests.swift in Sources */,
-				4216EC2A22C468CF0067ABF1 /* EventBusRxTests.swift in Sources */,
-				4216EC0C22C3FA250067ABF1 /* EventBusFeatureTests.swift in Sources */,
-				4216EC0B22C3FA250067ABF1 /* EventBusPriorityTests.swift in Sources */,
+				4254026B22F8376D007AAD6A /* EventBusTests.swift in Sources */,
+				4254026922F8376D007AAD6A /* EventBusDispatchTests.swift in Sources */,
+				4254026A22F8376D007AAD6A /* EventBusRxTests.swift in Sources */,
+				4254026D22F8376D007AAD6A /* EventBusFeatureTests.swift in Sources */,
+				4254026C22F8376D007AAD6A /* EventBusPriorityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,11 +1006,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C9C5B420B6B10300E197F7 /* SwiftyEventBus_tvOSTests.swift in Sources */,
-				4216EC2D22C468D40067ABF1 /* EventBusTests.swift in Sources */,
-				4216EC2E22C468D40067ABF1 /* EventBusPriorityTests.swift in Sources */,
-				4216EC2B22C468D40067ABF1 /* EventBusDispatchTests.swift in Sources */,
-				4216EC2F22C468D40067ABF1 /* EventBusFeatureTests.swift in Sources */,
-				4216EC2C22C468D40067ABF1 /* EventBusRxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,11 +1034,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C9C5D020B6B12B00E197F7 /* SwiftyEventBus_macOSTests.swift in Sources */,
-				4216EC3222C468D40067ABF1 /* EventBusTests.swift in Sources */,
-				4216EC3322C468D40067ABF1 /* EventBusPriorityTests.swift in Sources */,
-				4216EC3022C468D40067ABF1 /* EventBusDispatchTests.swift in Sources */,
-				4216EC3422C468D40067ABF1 /* EventBusFeatureTests.swift in Sources */,
-				4216EC3122C468D40067ABF1 /* EventBusRxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,6 +1184,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3417AD5D5BBDD9D7967AE3BB /* Pods-SwiftyEventBus.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1239,6 +1216,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39A86A546EA5C7CCCC1ACCE9 /* Pods-SwiftyEventBus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1270,7 +1248,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9FE4B33649175E829D9C5F10 /* Pods-SwiftyEventBusTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 678WD436L9;
@@ -1296,7 +1274,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90F4E626A8A709CAE4F4FBB1 /* Pods-SwiftyEventBusTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 678WD436L9;
@@ -1321,6 +1299,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9BBF4B7768650EC893F2560 /* Pods-SwiftyEventBus-watchOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1350,6 +1329,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54B546EE3C515799D8257D04 /* Pods-SwiftyEventBus-watchOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1379,6 +1359,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BB0D3F0F45A4E567E8820AF /* Pods-SwiftyEventBus-tvOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1407,6 +1388,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 696585DD2D239F65A097CAC5 /* Pods-SwiftyEventBus-tvOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1435,7 +1417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91B6C5577F8479DD9FC6BA25 /* Pods-SwiftyEventBus-tvOSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 678WD436L9;
 				INFOPLIST_FILE = "SwiftyEventBus-tvOSTests/Info.plist";
@@ -1457,7 +1439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D8B562FD104ED4F7338D53 /* Pods-SwiftyEventBus-tvOSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 678WD436L9;
 				INFOPLIST_FILE = "SwiftyEventBus-tvOSTests/Info.plist";
@@ -1479,6 +1461,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A51456FCC652D2929F1D751D /* Pods-SwiftyEventBus-macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1508,6 +1491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93A377E3333E8B848870D346 /* Pods-SwiftyEventBus-macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1537,7 +1521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36C44C85554B61778D9A4464 /* Pods-SwiftyEventBus-macOSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1560,7 +1544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E67D839CCD6545EF50DBC645 /* Pods-SwiftyEventBus-macOSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
