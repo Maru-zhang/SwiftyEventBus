@@ -3,7 +3,6 @@
 target 'SwiftyEventBus' do
   platform :ios, '8.0'
   use_frameworks!
-  pod 'RxSwift'
 end
 
 target 'SwiftyEventBusTests' do
@@ -11,7 +10,6 @@ target 'SwiftyEventBusTests' do
   use_frameworks!
   pod 'Quick'
   pod 'Nimble'
-  pod 'RxSwift'
   pod 'SwiftyEventBus', :path=>'./'
   pod 'SwiftyEventBusRx', :path=>'./'
 end
@@ -19,7 +17,6 @@ end
 target 'SwiftyEventBus-watchOS' do
   platform :watchos, '4.3'
   use_frameworks!
-  pod 'RxSwift'
   pod 'SwiftyEventBus', :path=>'./'
   pod 'SwiftyEventBusRx', :path=>'./'
 end
@@ -27,7 +24,6 @@ end
 target 'SwiftyEventBus-macOS' do
     platform :osx, '10.10'
     use_frameworks!
-    pod 'RxSwift'
     pod 'SwiftyEventBus', :path=>'./'
     pod 'SwiftyEventBusRx', :path=>'./'
 end
@@ -39,13 +35,11 @@ target 'SwiftyEventBus-macOSTests' do
   pod 'SwiftyEventBusRx', :path=>'./'
   pod 'Quick'
   pod 'Nimble'
-  pod 'RxSwift'
 end
 
 target 'SwiftyEventBus-tvOS' do
     platform :tvos, '9.0'
     use_frameworks!
-    pod 'RxSwift'
 end
 
 target 'SwiftyEventBus-tvOSTests' do
@@ -55,5 +49,4 @@ target 'SwiftyEventBus-tvOSTests' do
   pod 'SwiftyEventBusRx', :path=>'./'
   pod 'Quick'
   pod 'Nimble'
-  pod 'RxSwift'
 end
