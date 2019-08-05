@@ -13,15 +13,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
 
   s.swift_version = ['4.0', '4.2', '5.0']
-  s.default_subspecs = 'Core'
-
-  s.subspec 'Core' do |ss|
-    ss.source_files = 'SwiftyEventBus/Core/**/*.swift'
-  end
-
-  s.subspec 'Rx' do |ss|
-    ss.source_files = 'SwiftyEventBus/Rx/**/*.swift'
-    ss.dependency 'SwiftyEventBus/Core'
-    ss.dependency 'RxSwift'
-  end
+  s.source_files = 'SwiftyEventBus/Core/**/*.swift'
 end
