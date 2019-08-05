@@ -29,6 +29,8 @@ end
 target 'SwiftyEventBus-macOSTests' do
   platform :osx, '10.10'
   use_frameworks!
+  pod 'SwiftyEventBus', :path=>'./'
+  pod 'SwiftyEventBus/Rx', :path=>'./'
   pod 'Quick'
   pod 'Nimble'
   pod 'RxSwift'
@@ -43,6 +45,8 @@ end
 target 'SwiftyEventBus-tvOSTests' do
   platform :tvos, '9.0'
   use_frameworks!
+  pod 'SwiftyEventBus', :path=>'./'
+  pod 'SwiftyEventBus/Rx', :path=>'./'
   pod 'Quick'
   pod 'Nimble'
   pod 'RxSwift'

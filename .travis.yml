@@ -5,7 +5,7 @@ install: true
 cache: cocoapods
 podfile: Podfile
 xcode_scheme: SwiftyEventBus
-xcode_project: SwiftyEventBus.xcodeproj
+xcode_workspace: SwiftyEventBus.xcworkspace
 env:
   global:
   - FRAMEWORK_NAME=SwiftyEventBus
@@ -14,8 +14,9 @@ before_install:
 - brew outdated carthage || brew upgrade carthage
 before_script:
 - carthage update
+- pod install
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -scheme SwiftyEventBus -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace SwiftyEventBus.xcworkspace -scheme SwiftyEventBus -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.2'
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 05bd0885-f6ff-4e7a-b774-14ca8ea4badf
 before_deploy:
