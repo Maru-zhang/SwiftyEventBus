@@ -10,7 +10,8 @@ import Foundation
 import RxSwift
 import Quick
 import Nimble
-@testable import SwiftyEventBus
+import SwiftyEventBus
+@testable import SwiftyEventBusRx
 
 class EventBusRxSpec: QuickSpec {
 

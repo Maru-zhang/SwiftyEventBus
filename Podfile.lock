@@ -1,12 +1,17 @@
 PODS:
-  - Nimble (7.1.3)
-  - Quick (1.3.1)
-  - RxSwift (4.2.0)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
+  - RxSwift (5.0.0)
+  - SwiftyEventBus (1.0.1)
+  - SwiftyEventBusRx (1.0.1):
+    - RxSwift (~> 5.0.0)
+    - SwiftyEventBus (~> 1.0.0)
 
 DEPENDENCIES:
   - Nimble
   - Quick
-  - RxSwift
+  - SwiftyEventBus (from `./`)
+  - SwiftyEventBusRx (from `./`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -14,11 +19,19 @@ SPEC REPOS:
     - Quick
     - RxSwift
 
+EXTERNAL SOURCES:
+  SwiftyEventBus:
+    :path: "./"
+  SwiftyEventBusRx:
+    :path: "./"
+
 SPEC CHECKSUMS:
-  Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
-  Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SwiftyEventBus: 92afc60f805388d4f75854fe0f5acf41a56e2952
+  SwiftyEventBusRx: 00a0565dd6de84bef3f9d3bcd31e86030159af4a
 
-PODFILE CHECKSUM: 5f9c2f1449e59e9bda53e2da2b273c2d10afd8ca
+PODFILE CHECKSUM: ff008a9508cd9f9f4f1a7a22e8eb0cd8809b4cbd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.4
