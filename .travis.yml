@@ -11,11 +11,9 @@ env:
   - FRAMEWORK_NAME=SwiftyEventBus
 before_install:
 - gem install cocoapods -v '1.7.4'
-- brew update
-- brew outdated carthage || brew upgrade carthage
 before_script:
-- carthage update
-- pod install
+- pod update RxSwift
+- pod update --no-repo-update
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace SwiftyEventBus.xcworkspace -scheme SwiftyEventBus -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.2'
 after_success:
