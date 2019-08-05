@@ -1,4 +1,5 @@
 # Uncomment the next line to define a global platform for your project
+source 'https://cdn.cocoapods.org/'
 
 target 'SwiftyEventBus' do
   platform :ios, '8.0'
