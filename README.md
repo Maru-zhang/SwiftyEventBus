@@ -66,7 +66,7 @@ EventBus.default.safePost("Foo")
 If there is no observer subscribe this kind of message, `EventBus.default.safePost("Foo")` will raise `EventBusPostError.useless` Exception, you can catch it and handle this.
 
 ```swift
-/// handle EventBusPostError excetion
+/// handle EventBusPostError exception
 do {
     try EventBus.default.safePost("foo")
 } catch {
@@ -79,7 +79,7 @@ do {
 if you project using `RxSwift`, maybe you need this to bridge `SwiftyEventBus` to `Rx`.
 
 ```ruby
-pod 'SwiftyEventBus/Rx'
+pod 'SwiftyEventBusRx'
 ```
 
 after that, you can use `SwiftyEventBus` in `RxSwift` world.🎉
@@ -114,5 +114,9 @@ Maru-zhang, maru-zhang@foxmail.com
 ## License
 
 SwiftyEventBus is available under the MIT license. See the LICENSE file for more info.
+
+
+
+
 
 
