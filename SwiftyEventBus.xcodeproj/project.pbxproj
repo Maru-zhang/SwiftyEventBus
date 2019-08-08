@@ -22,6 +22,7 @@
 		427C5B4A22FC01630091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
 		427C5B4B22FC01640091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
 		427C5B4C22FC01650091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
+		427C5B6722FC20720091A3C6 /* EventBusLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */; };
 		429670E12110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E22110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E32110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
@@ -121,6 +122,7 @@
 		4216EC1F22C463FB0067ABF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftyEventBusRx.podspec; sourceTree = "<group>"; };
 		427C5B4822FBF6B60091A3C6 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBusLifeTests.swift; sourceTree = "<group>"; };
 		429670E02110630E00861796 /* EventBusSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSticky.swift; sourceTree = "<group>"; };
 		429670E42110634200861796 /* EventBusMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusMiddleware.swift; sourceTree = "<group>"; };
 		429670E8211075A100861796 /* EventBusSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSafety.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */,
 				42C9C57120B4177C00E197F7 /* EventBusTests.swift */,
 				42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */,
+				427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */,
 				429670FB2111A88E00861796 /* EventBusFeatureTests.swift */,
 				42C9C55220B416AE00E197F7 /* Info.plist */,
 			);
@@ -919,6 +922,7 @@
 				4254026B22F8376D007AAD6A /* EventBusTests.swift in Sources */,
 				4254026922F8376D007AAD6A /* EventBusDispatchTests.swift in Sources */,
 				4254026A22F8376D007AAD6A /* EventBusRxTests.swift in Sources */,
+				427C5B6722FC20720091A3C6 /* EventBusLifeTests.swift in Sources */,
 				4254026D22F8376D007AAD6A /* EventBusFeatureTests.swift in Sources */,
 				4254026C22F8376D007AAD6A /* EventBusPriorityTests.swift in Sources */,
 			);

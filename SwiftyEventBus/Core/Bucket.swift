@@ -49,10 +49,13 @@ public class ObserverHub {
             objc_sync_exit(entry)
         }
         let bucket: Bucket
+        let isOld: Bool
         if let oldBucket = entry.find(with: id) {
             bucket = oldBucket
+            isOld = true
         } else {
             bucket = Bucket(eventID: id, entry: entry)
+            isOld = false
         }
         /// note: don't use append method, it will waste mem-space.
         if var subscribers = bucket.subscribers as? Set<EventSubscriber<T>> {
@@ -63,11 +66,12 @@ public class ObserverHub {
         }
         if entry.head == nil {
             entry.head = bucket
-        } else {
+        }
+        if (!isOld) {
             bucket.parent = entry.trail
             entry.trail?.next = bucket
+            entry.trail = bucket
         }
-        entry.trail = bucket
     }
 
     /// Remove observer from opaque `ObserverHub`

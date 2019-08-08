@@ -26,9 +26,7 @@ extension EventBusDangerMiddleWare: EventBusSafePostable {
         if (support(.sticky)) {
             host.replayBuff.enqueue(cargo)
         }
-        guard let queue = host.observerHub.findAll(T.self) else {
-            return
-        }
+        let queue = host.observerHub.findAll(T.self) ?? []
         if (support(.safety) && queue.isEmpty) {
             throw EventBusPostError.useless
         }
