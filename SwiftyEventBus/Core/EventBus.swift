@@ -40,11 +40,11 @@ public class EventBus {
     /// The domain string that identify different `EventBus` instance
     public let domain: String
 
-    /// The Dictionary that contain all `EventSubscriber`
+    /// The observer hub that manage all of observers.
     /// Discuss: we use string of type as key, and a set of `EventSubscriber`
     /// as value. when register or unregister, we just need to modify corresponding
     /// set.
-    public var observers: [String: Any]
+    public let observerHub = ObserverHub()
 
     /// The dictinary that contain the lastest N message event
     /// for support sticky and replay event
@@ -60,7 +60,6 @@ public class EventBus {
     /// - Parameter domain: The domain string
     public init(domain: String) {
         self.domain = domain
-        self.observers = [String: Any]()
     }
 }
 

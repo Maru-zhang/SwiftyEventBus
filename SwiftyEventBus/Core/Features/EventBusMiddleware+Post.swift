@@ -10,11 +10,10 @@ import Foundation
 extension EventBusPureMiddleWare: EventBusPostable {
 
     public func post<T>(_ cargo: T) {
-        let identifier = EventID(T.self)
         if (support(.sticky)) {
             host.replayBuff.enqueue(cargo)
         }
-        guard let queue = host.observers[identifier] as? Set<EventSubscriber<T>> else {
+        guard let queue = host.observerHub.findAll(T.self) else {
             return
         }
         performPost(with: queue, cargo: cargo)
@@ -24,11 +23,10 @@ extension EventBusPureMiddleWare: EventBusPostable {
 extension EventBusDangerMiddleWare: EventBusSafePostable {
 
     public func post<T>(_ cargo: T) throws {
-        let identifier = EventID(T.self)
         if (support(.sticky)) {
             host.replayBuff.enqueue(cargo)
         }
-        guard let queue = host.observers[identifier] as? Set<EventSubscriber<T>> else {
+        guard let queue = host.observerHub.findAll(T.self) else {
             return
         }
         if (support(.safety) && queue.isEmpty) {
