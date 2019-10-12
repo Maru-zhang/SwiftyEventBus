@@ -18,6 +18,8 @@ class EventBusTests: QuickSpec {
     var stringBGBag: EventSubscription<String>?
     var intBag: EventSubscription<Int>?
 
+    let bag = EventBusBox()
+
     override func spec() {
         describe("A default eventbus") {
             describe("post string value", {

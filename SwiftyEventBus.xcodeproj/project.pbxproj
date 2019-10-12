@@ -18,6 +18,11 @@
 		4254026B22F8376D007AAD6A /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C57120B4177C00E197F7 /* EventBusTests.swift */; };
 		4254026C22F8376D007AAD6A /* EventBusPriorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */; };
 		4254026D22F8376D007AAD6A /* EventBusFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670FB2111A88E00861796 /* EventBusFeatureTests.swift */; };
+		427C5B4922FBF6B60091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
+		427C5B4A22FC01630091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
+		427C5B4B22FC01640091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
+		427C5B4C22FC01650091A3C6 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B4822FBF6B60091A3C6 /* Bucket.swift */; };
+		427C5B6722FC20720091A3C6 /* EventBusLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */; };
 		429670E12110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E22110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
 		429670E32110630E00861796 /* EventBusSticky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429670E02110630E00861796 /* EventBusSticky.swift */; };
@@ -116,6 +121,8 @@
 		4216EC1D22C463EA0067ABF1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4216EC1F22C463FB0067ABF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftyEventBusRx.podspec; sourceTree = "<group>"; };
+		427C5B4822FBF6B60091A3C6 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBusLifeTests.swift; sourceTree = "<group>"; };
 		429670E02110630E00861796 /* EventBusSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSticky.swift; sourceTree = "<group>"; };
 		429670E42110634200861796 /* EventBusMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusMiddleware.swift; sourceTree = "<group>"; };
 		429670E8211075A100861796 /* EventBusSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSafety.swift; sourceTree = "<group>"; };
@@ -311,6 +318,7 @@
 				42C9C57020B4177C00E197F7 /* EventBusRxTests.swift */,
 				42C9C57120B4177C00E197F7 /* EventBusTests.swift */,
 				42C9C61F20BC270800E197F7 /* EventBusPriorityTests.swift */,
+				427C5B6622FC20720091A3C6 /* EventBusLifeTests.swift */,
 				429670FB2111A88E00861796 /* EventBusFeatureTests.swift */,
 				42C9C55220B416AE00E197F7 /* Info.plist */,
 			);
@@ -338,6 +346,7 @@
 				42C9C56420B4177000E197F7 /* EventBus.swift */,
 				42C9C56520B4177000E197F7 /* EventBus+Postable.swift */,
 				42C9C56620B4177000E197F7 /* EventSubscriber.swift */,
+				427C5B4822FBF6B60091A3C6 /* Bucket.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -894,6 +903,7 @@
 				429670ED2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C56C20B4177000E197F7 /* EventSubscription.swift in Sources */,
 				42C9C56A20B4177000E197F7 /* EventPresentable.swift in Sources */,
+				427C5B4922FBF6B60091A3C6 /* Bucket.swift in Sources */,
 				42C9C56E20B4177000E197F7 /* EventBus+Postable.swift in Sources */,
 				42C9C56920B4177000E197F7 /* EventBus+Observable.swift in Sources */,
 				429670E52110634200861796 /* EventBusMiddleware.swift in Sources */,
@@ -912,6 +922,7 @@
 				4254026B22F8376D007AAD6A /* EventBusTests.swift in Sources */,
 				4254026922F8376D007AAD6A /* EventBusDispatchTests.swift in Sources */,
 				4254026A22F8376D007AAD6A /* EventBusRxTests.swift in Sources */,
+				427C5B6722FC20720091A3C6 /* EventBusLifeTests.swift in Sources */,
 				4254026D22F8376D007AAD6A /* EventBusFeatureTests.swift in Sources */,
 				4254026C22F8376D007AAD6A /* EventBusPriorityTests.swift in Sources */,
 			);
@@ -926,6 +937,7 @@
 				42C9C59E20B6B0D500E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C59C20B6B0D500E197F7 /* EventBus.swift in Sources */,
 				42C9C59B20B6B0D500E197F7 /* EventSubscription.swift in Sources */,
+				427C5B4A22FC01630091A3C6 /* Bucket.swift in Sources */,
 				429670F82111A63600861796 /* EventBusPureMiddleWare+Observer.swift in Sources */,
 				42C9C59A20B6B0D500E197F7 /* EventDispatch.swift in Sources */,
 				42C9C59820B6B0D500E197F7 /* EventBus+Observable.swift in Sources */,
@@ -946,6 +958,7 @@
 				429670EF2111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C5F120B6B56A00E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C5EF20B6B56A00E197F7 /* EventBus.swift in Sources */,
+				427C5B4B22FC01640091A3C6 /* Bucket.swift in Sources */,
 				42C9C5EE20B6B56A00E197F7 /* EventSubscription.swift in Sources */,
 				429670E62110634200861796 /* EventBusMiddleware.swift in Sources */,
 				429670EA211075A100861796 /* EventBusSafety.swift in Sources */,
@@ -974,6 +987,7 @@
 				429670F02111A24300861796 /* EventBusMiddleware+Post.swift in Sources */,
 				42C9C5E820B6B14A00E197F7 /* EventSubscriber.swift in Sources */,
 				42C9C5E620B6B14A00E197F7 /* EventBus.swift in Sources */,
+				427C5B4C22FC01650091A3C6 /* Bucket.swift in Sources */,
 				42C9C5E520B6B14A00E197F7 /* EventSubscription.swift in Sources */,
 				429670E72110634200861796 /* EventBusMiddleware.swift in Sources */,
 				429670EB211075A100861796 /* EventBusSafety.swift in Sources */,

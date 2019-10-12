@@ -11,7 +11,6 @@ import Foundation
 extension EventBusMiddleWare: EventBusObservable {
 
     public func register<T>(on mode: DispatchMode = .same, priority: EventBusPriority = .`default`, messageEvent: @escaping (T) -> Void) -> EventSubscription<T> {
-        let identifier = EventID(T.self)
         let subscriber = EventSubscriber(mode: mode, priority: priority, eventHandler: messageEvent)
         let subscription = EventSubscription(entity: subscriber, eventBus: host)
         if (support(.sticky)) {
@@ -19,12 +18,7 @@ extension EventBusMiddleWare: EventBusObservable {
                 messageEvent(previousCargo)
             }
         }
-        if var queue4T = host.observers[identifier] as? Set<EventSubscriber<T>> {
-            queue4T.insert(subscriber)
-            host.observers[identifier] = queue4T
-        } else {
-            host.observers[identifier] = Set<EventSubscriber<T>>(arrayLiteral: subscriber)
-        }
+        host.observerHub.add(subscriber)
         return subscription
     }
 }
