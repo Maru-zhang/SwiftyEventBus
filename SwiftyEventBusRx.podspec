@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'SwiftyEventBusRx'
-    s.version          = '1.0.1'
+    s.version          = '1.0.2'
     s.summary          = 'SwiftyEventBus is a publish/subscribe event bus for iOS and Swift.'
     s.homepage         = 'https://github.com/Maru-zhang/SwiftyEventBus'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }

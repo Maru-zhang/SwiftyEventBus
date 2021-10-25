@@ -115,7 +115,7 @@
 		4216EC1B22C463D50067ABF1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		4216EC1D22C463EA0067ABF1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4216EC1F22C463FB0067ABF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftyEventBusRx.podspec; sourceTree = "<group>"; };
+		4254026322F83437007AAD6A /* SwiftyEventBusRx.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftyEventBusRx.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		429670E02110630E00861796 /* EventBusSticky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSticky.swift; sourceTree = "<group>"; };
 		429670E42110634200861796 /* EventBusMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusMiddleware.swift; sourceTree = "<group>"; };
 		429670E8211075A100861796 /* EventBusSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBusSafety.swift; sourceTree = "<group>"; };
